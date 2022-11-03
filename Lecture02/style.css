@@ -1,0 +1,35 @@
+header,
+main,
+footer,
+div {
+    /* 設定框線 */
+    /* border: 2px solid black; */
+}
+
+header{
+   background-image: url("https://picsum.photos/1920/400?image=1015");
+   color: sandybrown;
+   height: 250px;
+
+}
+
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+header,
+main{
+    text-align: center;
+}
+
+.card{
+    padding: 3px;
+    width: calc(100% / 3);
+}
+
+/* 卡片不要破圖 */
+.card img{
+    width: 100%;
+}

@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    /* border: 2px solid black; */
+    width: 100px;
+    height: 60px;
+}
+#box-1{
+    /* width: 100%; */
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+   background-position: center center;
+   /* 固定背景 */
+   background-attachment: fixed;
+    padding: 200px 0;
+    
+    background-image: url("https://picsum.photos/1920/600?image=1015");
+    
+
+}
+
+#box-1 .container {
+  text-align: center;
+  /* border: 2px solid black; */
+   color: beige;
+}
+
+#box-1 .container .new1{
+    border-top: 3px solid white;
+}
+
+#box-1 .container::after{
+     /* content: "";
+    width: 200px;
+    height: 200px; 
+    
+    display: block;  */
+}
+
+
+#box-2{
+    position: relative;
+    left: 0;
+}
+
+#box-3{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#box-4{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(36, 53, 80);
+    opacity: .3;
+   
+} 
+
+#box-5{
+    width: 100%;
+    background-color: #373e42; 
+    color:white; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+
+#box-10{
+    /* background-color: #546f81; */
+    /* color: aliceblue; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 10px;
+    width: 60px;
+    text-align: center;
+    /* z-index: 1000; */
+    /* transform: scale(.5);  */
+    /* transition: all .75s ease; */
+    /* bottom: -60px; */
+    
+}
+
+/* .icon{
+    color: #000;
+} */
+
+#box-10 a .scroll-btn .icon{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#box-10 .scroll-btn{
+    color: aliceblue;
+}
+
+.scroll-btn {
+    background: #546f81;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    /* z-index: 1000; */
+    /* transform: scale(.5);  */
+    /* transition: all .75s ease; */
+    /* position: fixed; */
+    /* right: 20px; */
+    /* bottom: -60px; */
+}
+
+/* .scroll-btn.show {
+    bottom: 20px;
+    transform: scale(1);
+} */
+
+/* .scroll-btn:hover {
+    background: #D76D77;
+    box-shadow: 0px 8px 15px #eea2ac94;
+} */
+
+/* .scroll-btn:active {
+    box-shadow: 0px 8px 15px #eea2ac94, 0px 0px 0px 8px #eea2ac94;
+    transition: all .1s ease;
+} */
+
+
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    /* 一個靠左一個靠右 */
+    justify-content: space-between;
+    /* 內部元素垂直置中對齊 */
+    align-items: center;
+    /* padding: 0 15px; */
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 5px 20px rgba(36, 32, 35, 0.6);
+    background: #52565e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* 更多CSS漸層色彩可參考 */
+    /* https://uigradients.com/ */
+}
+
+.navbar a {
+    color: white;
+    /* text-decoration: underline; */
+    text-decoration: none;
+}
+
+.navbar-list a {
+    opacity: .8;
+    margin-right: 15px;
+    padding: 0 10px; 
+    /* background: red; */
+     margin: 10px 10px;
+     /* border: 2px solid black; */
+} 
+
+.navbar-list a:hover {
+    opacity: 1;
+}
+
+/* .navbar-list a:last-child {
+    margin-right: 0;
+}  */
+
+/* .navbar-toggler {
+    display: none;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+    transition: all .5s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+} */
+
+
+
+
+/* navbar的下面有個ul */
+ .navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    padding: 0 10px;
+     /* justify-content: flex-end; */
+}
+
+/* navbar的下面有個ul 正下方的li */
+.navbar ul>li {
+    /* border: 1px solid black; */
+    height: 40px;
+    width: 110px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#haeder .container .jumbotron { 
+    
+    border-radius: 0px;
+    margin-bottom: 0px;
+    /* TODO: 加入背景圖片 */
+   /* background-image: url("https://picsum.photos/1920/600?image=1015"); 
+   background-size: cover; 
+   background-position: center center; */
+   /* 固定背景 */
+    /* background-attachment: fixed;
+    padding: 200px 0;  */
+    /* position: relative; */
+
+}
+
+.footer{
+    text-align: center;
+    background-color: #314855;
+    /* color: rgb(174, 173, 173); */
+     padding: 15px 0px;
+     height: 50px;
+} 
+
+.footer p {
+    color: #cacaca;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.work{
+    background-color: #8b8c89
+}
+.work .container{
+    text-align: center;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+.work .container h1{
+    width: 100%;
+    font-size: 42px;
+    padding: 20px 0;
+}
+
+.work .container img{
+    padding: 10px 10px;
+    /* border:2px solid #232526; */
+    /* margin-left: auto;  */
+    /* margin-right: auto; */
+}
+
+.work .container h2{
+    color: black;
+    border-bottom: 3px solid #000;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bolder;
+    font-size: 30px; 
+    /* letter-spacing: 3px; */
+    text-align: left;
+    width: 325px;
+    /* border: 2px solid black; */
+    margin: 0 10px;
+    /* position: relative; */
+    /* bottom: 5px; */
+    /* left: 20px; */
+}
+
+/* .card {
+    
+    font-style: normal;
+    font-size: 20px;
+    border: none;
+    height: 48px;
+    padding: 0 20px;
+    font-weight: 700;
+    background: #30c39e;
+    color: whitesmoke;
+    width: 300px;
+    bottom: 10px;
+    left: 55px;
+} */
+
+
+/* 藍底 */
+/* .content {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6DD7DE;
+} */
+
+/* 標題樣式 */
+/* .title {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: #2F3640;
+    text-shadow: 3px 3px #FEDC6B;
+} */
+
+ /* .work .container .title1::after {
+    
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bolder;
+     font-size: 0px; 
+    letter-spacing: 3px;
+    text-align: left;
+    width: 275px;
+    position: relative;
+    bottom: 5px;
+    left: 20px;
+    color: #000;
+  } */
+
+  /* .title-c {
+    position: relative;
+    padding: 0 65px;
+    text-align: center;
+  }
+  .title-c::after {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #000;
+  }
+  .title-c span {
+    position: relative;
+    padding: 0 1em;
+    background: #fff;
+  } */
+
+/* hr .new1{
+    border-top: 2px solid white;
+} */
+
+
+
+
+
+/* .banner .container{
+color: #fff;
+text-align: center;
+} */

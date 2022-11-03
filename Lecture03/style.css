@@ -1,0 +1,78 @@
+.profile-img {
+    border-radius: 500%;
+}
+
+[class^="col-"] {
+    padding: 15px;
+    letter-spacing: 1px;
+    /* word-spacing: 15px; */
+    line-height: 40px;
+}
+
+.navbar {
+    border: 1px solid white;
+    background-color: cornflowerblue;
+    height: 70px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+/* navbar的下面有個ul */
+.navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content:0; 
+    /* margin: 15px 15px; */
+}
+
+/* navbar的下面有個ul 正下方的li */
+.navbar ul>li {
+    /* border: 1px solid black; */
+    height: 40px;
+    width: 110px;
+    line-height: 35px;
+    text-align: center;
+    /* border: 2px solid crimson; */
+    position: relative;
+    bottom: 5px;
+    right: 30px;
+    /* margin: -15px 15px; */
+
+}
+
+.relative-btn {
+    border: none;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    /* color: white; */
+    padding: 0 20px;
+    background: #30c39e;
+    cursor: pointer;
+    /* 更多CSS cursor */
+    /* https://www.w3schools.com/cssref/pr_class_cursor.asp */
+    border-radius: 12px;
+    box-shadow: 0px 2px 3px #eea2ac94;
+    transition: all 1s ease;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+.relative-btn:hover {
+    bottom: 5px;
+    background: #0085ad;
+    box-shadow: 0px 8px 15px #eea2ac94;
+}
+
+.relative-btn:active {
+    box-shadow: 0px 8px 15px #eea2ac94, 0px 0px 0px 8px #eea2ac94;
+    transition: all .1s ease;
+}
+
+.relative-btn a{
+    color: antiquewhite;
+}
