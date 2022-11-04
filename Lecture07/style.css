@@ -43,3 +43,12 @@ body a{
 .relative-btn a {
     color: antiquewhite;
 }
+
+.container{
+    background-color:#E8F5E9;
+}
+
+.container .form-control{
+    background-color:#C8E6C9; 
+    border: none; 
+}

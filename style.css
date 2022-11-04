@@ -142,12 +142,12 @@
     left: 0px;
     display: flex;
     /* 一個靠左一個靠右 */
-    justify-content: space-between;
+    justify-content: flex-end;
     /* 內部元素垂直置中對齊 */
     align-items: center;
     /* padding: 0 15px; */
     width: 100%;
-    height: 60px;
+    height: 50px;
     box-shadow: 0px 5px 20px rgba(36, 32, 35, 0.6);
     background: #52565e;
     /* fallback for old browsers */
@@ -167,23 +167,26 @@
 
 .navbar-list a {
     opacity: .8;
-    margin-right: 15px;
-    padding: 0 10px; 
+    /* margin-right: 15px; */
+    padding: 0 15px; 
     /* background: red; */
-     margin: 10px 10px;
-     /* border: 2px solid black; */
+    /* margin: 0px 5px; */
+    /* border: 2px solid black; */
 } 
 
 .navbar-list a:hover {
     opacity: 1;
 }
 
-/* .navbar-list a:last-child {
+.navbar-list a:last-child {
     margin-right: 0;
-}  */
+}
 
-/* .navbar-toggler {
+.navbar-toggler {
     display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
 }
 
 .navbar-brand {
@@ -194,7 +197,80 @@
 
 .navbar-brand:hover {
     transform: scale(1.1);
-} */
+}
+
+/* 手機版 <= 600px */
+@media (max-width: 600px) {
+    .navbar-list {
+        position: fixed;
+        /* 隱藏此區塊在畫面的左側 */
+        left: -200px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        transition: all .5s ease-out;
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #434343, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #434343, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    /* 選同時擁有.navbar-list與.active的元素 */
+    .navbar-list.active {
+        left: 0px;
+    }
+
+    .navbar-list a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+    }
+
+    .line {
+        width: 25px;
+        height: 2px;
+        background: white;
+        position: relative;
+        /* transform: rotateZ(45deg); */
+    }
+
+    .line,
+    .line:before,
+    .line:after {
+        transition: all .3s ease-out;
+    }
+
+    .line:before,
+    .line:after {
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: white;
+        display: block;
+        position: absolute;
+        /* top: -5px; */
+    }
+
+    .line:before {
+        top: -8px;
+    }
+
+    .line:after {
+        bottom: -8px;
+    }
+
+    
+}
 
 
 
